@@ -1,79 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda de Eventos - IFCE Campus Maranguape</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agenda de Eventos - IFCE Campus Maranguape</title>
 
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f5f5;
-    }
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
 
-    h1 {
-        color: #1b4f72;
-        font-size: 36px;
-        font-weight: bold;
-        text-align: center;
-    }
+        h1 {
+            color: #1b4f72;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            font-family: 'Georgia', serif;
+        }
 
-    h2 {
-        color: #8e44ad;
-        font-size: 24px;
-    }
+        h2 {
+            color: #8e44ad;
+            font-size: 24px;
+        }
 
-    p {
-        font-size: 16px;
-        line-height: 1.6;
-        text-align: justify;
-    }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+        }
 
-    #apresentacao {
-        background-color: #d6eaf8;
-        text-align: center;
-        font-size: 18px;
-    }
+        #apresentacao {
+            background-color: #d6eaf8;
+            text-align: center;
+            font-size: 18px;
+            padding: 15px;
+            border-radius: 6px;
+        }
 
-</style>
-</head>
+        li {
+            font-size: 18px;
+            line-height: 1.8;
+        }
 
-<body>
-    <h1>Agenda de Eventos - IFCE Campus Maranguape</h1>
+        a {
+            color: #21618c;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    <p id="apresentacao">Confira três eventos fictícios preparados para a comunidade do IFCE Campus Maranguape!</p>
+        a:hover {
+            color: #e74c3c;
+        }
 
-    <section>
-        <h2 class="titulo-evento">Feira de Ciências e Tecnologia</h2>
-        <p>Estudantes apresentarão experiências e projetos desenvolvidos em sala de aula.</p>
-        <p><span class="data">Data: 20 de novembro de 2026</span></p>
-        <p>Local: Pátio do IFCE Campus Maranguape.</p>
-        <p>Atrações:</p>
-        <ul>
-            <li>Exposição de projetos</li>
-            <li>Demonstrações de robótica</li>
-            <li>Experimentos interativos</li>
-        </ul>
-    </section>
+        .titulo-evento {
+            letter-spacing: 2px;
+        }
 
-    <section class="evento-destaque">
-        <h2 class="titulo-evento">Festival Cultural Estudantil</h2>
-        <p class="descricao">Uma tarde de música, dança e apresentações artísticas feitas pelos estudantes.</p>
-        <p><span class="data">Data: 27 de novembro de 2026</span></p>
-        <p>Local: Auditório do IFCE Campus Maranguape.</p>
-    </section>
+        .data {
+            color: rgb(192, 57, 43);
+            font-weight: bold;
+        }
 
-    <section>
-        <h2 class="titulo-evento">Encontro de Desenvolvimento Web</h2>
-        <p>Uma conversa sobre criação de sites e apresentação de páginas feitas pelos alunos.</p>
-        <p><span class="data">Data: 4 de dezembro de 2026</span></p>
-        <p>Local: Laboratório de Informática do IFCE Campus Maranguape.</p>
-        <p>Conheça o <a href="https://ifce.edu.br/" target="_blank" rel="noopener noreferrer">site do IFCE</a>.</p>
-    </section>
+        .evento-destaque {
+            background-color: rgb(254, 249, 231);
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #8e44ad;
+        }
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Para saber mais sobre os eventos fictícios, procure a organização estudantil do campus.</p>
-    </section>
-</body>
+        .evento-destaque .descricao {
+            color: #78281f;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #contato {
+            background-color: #d5f5e3;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 6px;
+        }
+
+    </style>
+    </head>
+
+    <body>
+        <h1>Agenda de Eventos - IFCE Campus Maranguape</h1>
+
+        <p id="apresentacao">Confira três eventos fictícios preparados para a comunidade do IFCE Campus Maranguape!</p>
+
+        <section>
+            <h2 class="titulo-evento">Feira de Ciências e Tecnologia</h2>
+            <p>Estudantes apresentarão experiências e projetos desenvolvidos em sala de aula.</p>
+            <p><span class="data">Data: 20 de novembro de 2026</span></p>
+            <p>Local: Pátio do IFCE Campus Maranguape.</p>
+            <p>Atrações:</p>
+            <ul>
+                <li>Exposição de projetos</li>
+                <li>Demonstrações de robótica</li>
+                <li>Experimentos interativos</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="evento-destaque">
+            <h2 class="titulo-evento">Festival Cultural Estudantil</h2>
+            <p class="descricao">Uma tarde de música, dança e apresentações artísticas feitas pelos estudantes.</p>
+            <p><span class="data">Data: 27 de novembro de 2026</span></p>
+            <p>Local: Auditório do IFCE Campus Maranguape.</p>
+            <p>Atrações Culturais:</p>
+            <ul>
+                <li>Banda de música independente</li>
+                <li>Apresentação de dança regional</li>
+                <li>Recital de poesia</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 class="titulo-evento">Encontro de Desenvolvimento Web</h2>
+            <p>Uma conversa sobre criação de sites e apresentação de páginas feitas pelos alunos.</p>
+            <p><span class="data">Data: 4 de dezembro de 2026</span></p>
+            <p>Local: Laboratório de Informática do IFCE Campus Maranguape.</p>
+            <p>Conheça o <a href="https://ifce.edu.br/" target="_blank" rel="noopener noreferrer">site do IFCE</a>.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p style="text-align: center;">Para saber mais sobre os eventos fictícios, procure a organização estudantil do campus.</p>
+            <p style="text-align: center;"><strong>E-mail:</strong> contato@maranguape.ifce.edu.br</p>
+        </section>
+        
+        <footer style="text-align: center; margin-top: 40px; padding: 20px; font-size: 14px; color: #555;">
+            <p>&copy; 2026 - Desenvolvido por <strong>Francisco Adriel</strong> e <strong>Wendel Peterson</strong></p>
+        </footer>
+
+    </body>
 </html>
